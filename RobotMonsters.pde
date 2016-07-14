@@ -89,7 +89,7 @@ void setup() {
   toolbox = new Toolbox(this);  
   
   minim = new Minim(this);  
-  bgm =  minim.loadFile("BGM1.mp3");
+  bgm =  minim.loadFile("myRap.mp3");
   sndFairy =  minim.loadFile("fairy.mp3");
   sndCheer =  minim.loadFile("cheer.mp3");  
   bgm.play();

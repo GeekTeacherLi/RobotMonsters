@@ -53,8 +53,6 @@ class CodeBox
     
     for(int i = 0;i < currentIndex;i++)
     {
-      
-        
         
         if(i == CMD_COUNT_PER_ROW)
         {
@@ -62,6 +60,18 @@ class CodeBox
           col = 0;
         }
 
+        stroke(200);
+
+        if(gIsRunningProgram)
+        {
+
+          if(gRunCmdIndex == i)
+          {
+            rect(45 +BUTTON_SIZE *col,620 + row*60,BUTTON_SIZE,BUTTON_SIZE);
+          }
+        
+        }
+        
         image(instructions[codelist[i]],45 +BUTTON_SIZE *col,620 + row*60);
         
         col++;

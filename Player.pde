@@ -1,6 +1,8 @@
 
-
+int gRunCmdIndex = 0;
+boolean gIsRunningProgram = false;
 int moving_tile_millis = 1000;  //  define how long player move from one tile to the other
+
 
 class Player
 {
@@ -121,6 +123,8 @@ class Player
    
 
      int ox = 0,oy = 0;
+     
+     gIsRunningProgram = running_program;
    
    if(running_program) //<>//
    {
@@ -150,6 +154,7 @@ class Player
         
         if(curCmdIndex < cmdCount)
         {
+          gRunCmdIndex = curCmdIndex;
           exec_single_cmd(curCmd);
         
         }
@@ -191,8 +196,13 @@ class Player
     text(speech,px + 45,py - 80);
     }
     
+    
+   pushMatrix();
+
+ //  translate(-player.width/2, -player.height/2);
+  // rotate(0.5);
    image(player, px, py);   
-   
+   popMatrix();
    
   }
   
@@ -225,6 +235,7 @@ class Player
     cmdCount = count;
     curCmdIndex = 0;
     curCmd = cmdList[0];
+
     
     exec_single_cmd(curCmd);
     
