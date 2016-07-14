@@ -1,5 +1,5 @@
-This is education program which can teach kids how to write code.
-Main idea is based from Robot Turtles.
-I will add more special effects later.
+This is a educational program can teach kids how to write code.
+The main idea is based from the board game - Robot Turtles.
+I will add more special effects soon.
 
 ENJOY!
