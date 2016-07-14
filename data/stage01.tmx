@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" orientation="orthogonal" renderorder="right-down" width="8" height="8" tilewidth="80" tileheight="64" nextobjectid="9">
+ <tileset firstgid="1" name="Ground" tilewidth="80" tileheight="135" tilecount="7" columns="0">
+  <tile id="0">
+   <image width="80" height="135" source="images/Brown Block.png"/>
+  </tile>
+  <tile id="1">
+   <image width="80" height="135" source="images/Grass Block.png"/>
+  </tile>
+  <tile id="2">
+   <image width="80" height="135" source="images/Dirt Block.png"/>
+  </tile>
+  <tile id="3">
+   <image width="80" height="135" source="images/Plain Block.png"/>
+  </tile>
+  <tile id="4">
+   <image width="80" height="135" source="images/Stone Block.png"/>
+  </tile>
+  <tile id="5">
+   <image width="80" height="135" source="images/Water Block.png"/>
+  </tile>
+  <tile id="6">
+   <image width="80" height="135" source="images/Wood Block.png"/>
+  </tile>
+ </tileset>
+ <tileset firstgid="8" name="object" tilewidth="80" tileheight="135" tilecount="6" columns="0">
+  <tile id="0">
+   <image width="80" height="135" source="images/Gem Blue.png"/>
+  </tile>
+  <tile id="1">
+   <image width="80" height="135" source="images/Gem Green.png"/>
+  </tile>
+  <tile id="2">
+   <image width="80" height="135" source="images/Gem Orange.png"/>
+  </tile>
+  <tile id="3">
+   <image width="80" height="135" source="images/Heart.png"/>
+  </tile>
+  <tile id="4">
+   <image width="80" height="135" source="images/Key.png"/>
+  </tile>
+  <tile id="5">
+   <image width="80" height="135" source="images/Star.png"/>
+  </tile>
+ </tileset>
+ <layer name="ground" width="8" height="8" offsetx="0" offsety="30">
+  <data encoding="csv">
+1,1,1,1,1,1,1,1,
+1,1,1,1,1,1,1,1,
+1,1,1,1,1,1,1,1,
+1,1,1,1,1,1,1,1,
+1,1,1,1,1,1,1,1,
+1,1,1,1,1,1,1,1,
+1,1,1,1,1,1,1,1,
+1,1,1,1,1,1,1,1
+</data>
+ </layer>
+ <layer name="object" width="8" height="8">
+  <data encoding="csv">
+13,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,
+0,0,0,8,10,0,0,0,
+0,0,0,10,9,0,0,0,
+0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0
+</data>
+ </layer>
+</map>
